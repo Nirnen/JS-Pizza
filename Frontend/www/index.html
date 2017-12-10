@@ -15,8 +15,69 @@
 
 </head>
 <body>
-<div id="cart"></div>
+<div class="flag promo"></div>
+<div class="container-fluid">
+<!-- Классы navbar и navbar-default (базовые классы меню) -->
+<nav class="navbar navbar-default navbar-fixed-top col-xs-7 col-sm-7 col-md-8 col-lg-9">
+    <!-- Контейнер (определяет ширину Navbar) -->
+    <div class="container-fluid">
+        <!-- Заголовок -->
+        <div class="navbar-header">
+            <!-- Бренд или название сайта (отображается в левой части меню) -->
+            <a class="navbar-brand pizza-label" href="#">Pizza KMA</a>
+        </div>
+        <!-- Основная часть меню (может содержать ссылки, формы и другие элементы) -->
+        <div class="collapse navbar-collapse" id="navbar-main">
+            <div class="col-xs-10 top-menu">
+                <div class="col-xs-9">
+            <span class="menu-text-1">(044) 222 5 222</span>
+            <span class="menu-text-2">24 години/ 7 днів на тиждень</span>
+            <span class="menu-text-3">Безкоштовна доставка піци</span></div>
+            <div class="col-xs-2 col-xs-offset-1 btn-sm btn-warning text-center">Ввійти</div>
+</div>
+         <div class="menu-pz col-xs-1">Піца</div></div>
+
+        </div>
+</nav>
+
+<div class="cart col-xs-5 col-sm-5	col-md-4 col-lg-3">
+    <div class="cart-title"><div class=" col-xs-6">Замовлення </div><span id="cartcounter"></span>
+        <button type="button" class="btn btn-link btn-xs col-xs-6">Очистити замовлення</button></div>
+
+    <div class="row" id="cartbody">
+        <div class="chosenpizza"><div class="col-xs-8">
+            <div class="cart-pizza-title">BBQ (Мала)</div>
+            <div class="cart-pizza-options">30 460</div>
+            <div class="row cart-pizza-lastrow">
+                <div class="price col-xs-3">556грн</div>
+                <div class="col-xs-2"> <button class="btn-xs btn-danger"><span	class="glyphicon glyphicon-minus"></span></button></div>
+
+                <div class="amount col-xs-1">1</div>
+                <div class="col-xs-2"> <button class="btn-xs btn-success"><span	class="glyphicon glyphicon-plus"></span></button></div>
+                <div class="col-xs-3"> <button class="btn-xs btn-default"><span	class="glyphicon glyphicon-remove"></span></button></div>
+            </div>  </div> <div class="col-xs-4">image</div></div>
+
+
+    </div>
+    <div class="row" id="cartbottom"><div>
+        <div class="col-xs-8"> Сумма замовлення</div> <span class="price col-xs-4">924 грн</span></div>
+        <div class="col-xs-6 col-xs-offset-3 btn btn-warning btn-lg">Замовити</div>
+    </div>
+</div>
+
 <div class="container">
+
+    <div class="left-container col-xs-6	col-sm-7 col-md-8 col-lg-9">
+
+    <div class="title row center-block "><div class="col-xs-4 col-xs-offset-5"><span class="title-of-list ">Усі піци</span>
+        <span class="pizza-counter  text-center">0</span></div></div>
+    <div id="filters" class="text-center">
+        <button type="button" class="btn btn-warning">Усі</button>
+        <button type="button" class="btn btn-link">Мясні</button>
+        <button type="button" class="btn btn-link">З ананасами</button>
+        <button type="button" class="btn btn-link">З грибами</button>
+        <button type="button" class="btn btn-link">З морепродуктами</button>
+        <button type="button" class="btn btn-link">Вега</button></div>
     <div class="row" id="pizza_list">
         <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="thumbnail pizza-card">
@@ -27,8 +88,8 @@
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 
                     <p>
-                        <a href="#" class="btn btn-primary">Button 2</a>
-                        <a href="#" class="btn btn-default">Button 1</a>
+                        <a href="#" class="btn btn-warning">Button 2</a>
+                        <a href="#" class="btn btn-warning">Button 1</a>
                     </p>
                 </div>
             </div>
@@ -43,8 +104,8 @@
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 
                     <p>
-                        <a href="#" class="btn btn-primary">Button 3</a>
-                        <a href="#" class="btn btn-default">Button 4</a>
+                        <a href="#" class="btn btn-warning">Button 3</a>
+                        <a href="#" class="btn btn-warning">Button 4</a>
                     </p>
                 </div>
             </div>
@@ -59,32 +120,17 @@
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 
                     <p>
-                        <a href="#" class="btn btn-primary">Button 5</a>
-                        <a href="#" class="btn btn-default">Button 6</a>
+                        <a href="#" class="btn btn-warning">Button 5</a>
+                        <a href="#" class="btn btn-warning">Button 6</a>
                     </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div id="cart col-xs-5 col-sm-5	col-md-4 col-lg-3">
-    <div id="carttitle">Замовлення <span id="cartcounter"></span>
-        <button type="button" class="btn btn-link btn-xs">Очистити замовлення</button></div>
 
-    <div id="cartbody">
-       <!-- <div class="chosenpizza"><div class="col-xs-8">
-            <div class="cart-pizza-title">BBQ (Мала)</div>
-            <div class="cart-pizza-options">30 460</div>
-            <div class="cart-pizza-lastrow"></div></div><div class="col-xs-4"><img src="assets/images"></div>
-        </div> -->
-    </div>
-    <div id="cartbottom">
-        Сумма замовлення <span id="price">924 грн</span>
-        <button type="button" class="btn btn-default btn-lg">Замовити</button>
-    </div>
 </div>
 </div>
-
 <!-- jQuery JavaScript -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
 

@@ -1,3 +1,4 @@
+
 <%
 
 function getIngredientsArray(pizza) {
@@ -28,14 +29,25 @@ function getIngredientsArray(pizza) {
         <% } %>
 
         <div class="caption">
-            <span class="title"><%= pizza.title %></span>
-            <div class="type"><%= pizza.type %></div>
+           &lt;!&ndash;<span class="title"><%= pizza.title %></span> &ndash;&gt;
+            <h3><%= pizza.title %></h3>
+            <div class="pizza-type"><%= pizza.type %></div>
             <div class="description">
                 <%= getIngredientsArray(pizza).join(", ") %>
             </div>
+            <span class="size"><img src="../www/assets/images/size-icon.svg"><%= pizza.small_size.size %></span>
+            <span class="size"><img src="../www/assets/images/size-icon.svg"><%= pizza.big_size.size %></span>
+            <span class="size"><img src="../www/assets/images/weight.svg"><%= pizza.small_size.weight %></span>
+            <span class="size"><img src="../www/assets/images/weight.svg"><%= pizza.big_size.weight %></span>
+
+            <div> <span class="sm-price price"><%= pizza.small_size.price %></span> <span class="bg-price price"><%= pizza.big_size.price %></span></div>
+            <div><span class="grn">грн.</span> <span class="grn">грн.</span></div>
+            <div> <a href="#" class="btn btn-warning">Купити</a>
+                <a href="#" class="btn btn-warning">Купити</a></div>
+
         </div>
 
-        <!-- Перед тим щоб показати кнопку необхідно переконатися, що піца має великий розмір -->
-        <button class="btn btn-primary buy-big">Купити велику</button>
+        &lt;!&ndash; Перед тим щоб показати кнопку необхідно переконатися, що піца має великий розмір &ndash;&gt;
+       &lt;!&ndash; <button class="btn btn-primary buy-big">Купити велику</button>&ndash;&gt;
     </div>
 </div>
